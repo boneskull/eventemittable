@@ -1,0 +1,56 @@
+{
+  "name": "eventemittable",
+  "version": "0.0.0",
+  "main": "dist/eventemittable.js",
+  "module": "src/eventemittable.js",
+  "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
+  "license": "Apache-2.0",
+  "description": "A composable EventEmitter for Stampit v3",
+  "homepage": "https://github.com/boneskull/eventemittable",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "stampit",
+    "events",
+    "eventemitter",
+    "eventemittable",
+    "stamp",
+    "compose",
+    "composable",
+    "emit",
+    "emitter"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.2.0",
+    "babel-register": "^6.23.0",
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.3.0",
+    "sinon": "^2.1.0",
+    "stampit": "^3.1.2",
+    "unexpected": "^10.27.0",
+    "unexpected-sinon": "^10.7.1"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "peerDependencies": {
+    "stampit": "^3.0.0"
+  },
+  "scripts": {
+    "pretest": "eslint '*.js' src test --fix",
+    "build": "babel --source-maps --out-dir dist src",
+    "build:watch": "babel --source-maps --watch --out-dir dist src",
+    "test": "mocha --require babel-register"
+  },
+  "dependencies": {}
+}
