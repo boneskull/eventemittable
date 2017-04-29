@@ -1,11 +1,10 @@
-/* eslint-env mocha */
-
 import {EventEmitter} from 'events';
-import EventEmittable from '../src/eventemittable';
 import unexpected from 'unexpected';
 import usinon from 'unexpected-sinon';
 import sinon from 'sinon';
 import stampit from 'stampit';
+
+import EventEmittable from '../src/eventemittable';
 
 const expect = unexpected.clone()
   .use(usinon);

@@ -28,12 +28,7 @@
     "babel-preset-env": "^1.2.0",
     "babel-register": "^6.23.0",
     "eslint": "^3.19.0",
-    "eslint-config-semistandard": "^11.0.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
+    "eslint-config-xo": "^0.18.1",
     "mocha": "^3.3.0",
     "sinon": "^2.1.0",
     "stampit": "^3.1.2",
@@ -47,7 +42,7 @@
     "stampit": "^3.0.0"
   },
   "scripts": {
-    "pretest": "eslint '*.js' src test --fix",
+    "pretest": "eslint src/ test/",
     "build": "babel --source-maps --out-dir dist src",
     "build:watch": "babel --source-maps --watch --out-dir dist src",
     "test": "mocha --require babel-register"

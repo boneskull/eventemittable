@@ -1,1 +1,10 @@
-extends: semistandard
+extends: xo
+rules:
+  new-cap: off
+  capitalized-comments: off
+  space-before-function-paren:
+    - error
+    - always
+  indent:
+    - error
+    - 2

@@ -1,0 +1,4 @@
+rules:
+  max-nested-callbacks: off
+env:
+  mocha: true
