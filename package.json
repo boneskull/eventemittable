@@ -46,7 +46,7 @@
     "build": "babel --source-maps --out-dir dist src",
     "build:watch": "babel --source-maps --watch --out-dir dist src",
     "test": "mocha --require babel-register",
-    "publish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {}
 }
