@@ -45,7 +45,8 @@
     "pretest": "eslint src/ test/",
     "build": "babel --source-maps --out-dir dist src",
     "build:watch": "babel --source-maps --watch --out-dir dist src",
-    "test": "mocha --require babel-register"
+    "test": "mocha --require babel-register",
+    "publish": "build"
   },
   "dependencies": {}
 }
