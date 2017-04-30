@@ -1,6 +1,6 @@
 {
   "name": "eventemittable",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "dist/eventemittable.js",
   "module": "src/eventemittable.js",
   "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
