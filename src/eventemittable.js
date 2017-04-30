@@ -1,5 +1,5 @@
 import {EventEmitter} from 'events';
-import stampit from 'stampit';
+import stampit from '@stamp/it';
 
 // https://github.com/stampit-org/stampit/blob/master/advanced-examples/event-emitter.js
 export default stampit()

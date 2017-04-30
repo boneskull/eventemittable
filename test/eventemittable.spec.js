@@ -2,7 +2,7 @@ import {EventEmitter} from 'events';
 import unexpected from 'unexpected';
 import usinon from 'unexpected-sinon';
 import sinon from 'sinon';
-import stampit from 'stampit';
+import stampit from '@stamp/it';
 
 import EventEmittable from '../src/eventemittable';
 
@@ -172,7 +172,10 @@ describe('EventEmittable', function () {
     });
   });
 
-  it('should throw if max listeners exceeded', function () {
+  it('should emit a warning if max listeners exceeded', function () {
+    if (!process.emitWarning) {
+      this.skip();
+    }
     const ee = EventEmittable();
     sbx.stub(process, 'emitWarning');
     ee.setMaxListeners(2);
